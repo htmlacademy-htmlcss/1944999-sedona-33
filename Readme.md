@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Владислав Антипов](https://up.htmlacademy.ru/htmlcss/33/user/1944999).
-* Наставник: `Неизвестно`.
+* Наставник: [Владислав Зубко](https://htmlacademy.ru/profile/whatislove).
 
 ---
 
