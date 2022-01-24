@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>Гостиницы Седона</title>
+  </head>
+
+  <body>
+    <header class="inner-header-title">
+      <nav class="navigation">
+        <div class="logo">
+          <a href="index.html">
+            <img src="" alt="Логотип" />
+          </a>
+        </div>
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a class="navigation-link" href="index.html">Главная</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">О седоне</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link-current" href="catalog.html">
+              Гостиницы</a
+            >
+          </li>
+        </ul>
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">
+              <span class="visually-hidden">Поиск</span>
+            </a>
+          </li>
+          <li class="visually-hidden">
+            <a class="navigation-link" href="#">
+              <span class="visiually-hidden"> Избранное</span>
+            </a>
+          </li>
+          <li class="visually-hidden">
+            <a class="navigation-link" href="#"> Хочу сюда!</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-catalog">
+      <section>
+        <h1 class="main-catalog hotel">Гостиницы Седоны</h1>
+        <ol class="breadcrumbs">
+          <li class="breadcrumbs-list">
+            <a class="breadcrumbs-item" href="index.html"
+              ><img src="" alt="Главная страница" />></a
+            >
+          </li>
+          <li>
+            <a class="breadcrumbs-item">Гостиницы</a>
+          </li>
+        </ol>
+      </section>
+
+      <h2 class="visually-hidden">Фильтр гостиниц</h2>
+      <form
+        class="catalog-filter"
+        action="https://echo.htmlacademy.ru/"
+        method="get">
+
+        <fieldset class="catalog-filter infrastructure">
+          <legend class="infrastructure-name">Инфрастуктура</legend>
+          <ul>
+            <li>
+              <label class="infrastructure-name-chekbox">
+                <input
+                  class="checkbox"
+                  type="checkbox"
+                  name="swimming-pool"
+                  checked
+                />
+                Бассейн
+              </label>
+            </li>
+            <li>
+              <label class="infrastructure-name-chekbox">
+                <input
+                  class="checkbox"
+                  type="checkbox"
+                  name="parking"
+                  checked
+                />
+                Парковка
+              </label>
+            </li>
+            <li>
+              <label class="infrastructure-name-chekbox">
+                <input
+                  class="checkbox-infrastructure"
+                  type="checkbox"
+                  name="wi-fi"
+                />
+                Wi-FI
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="catalog-filter type-housing">
+          <legend class="type-housing-name">Тип жилья</legend>
+          <ul class="type-housing-list">
+            <li class="type-housing-elements">
+              <label class="radio-type-radio">
+                <input
+                  class="radio"
+                  type="radio"
+                  name="type-housing"
+                  value="hotel"
+                  checked
+                />
+                Отель
+              </label>
+            </li>
+            <li class="type-housing-elements">
+              <label class="radio-type-housing">
+                <input
+                  class="radio"
+                  type="radio"
+                  name="type-housing"
+                  value="motel"
+                />
+                Мотель
+              </label>
+            </li>
+            <li class="type-housing-elements">
+              <label class="radio-type-housing">
+                <input
+                  class="radio"
+                  type="radio"
+                  name="type-housing"
+                  value="apartments"
+                />
+                Апартаменты
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset>
+          <legend>
+            Стоимость,&#8381:
+          </legend>
+          <ul>
+            <li>
+              <input type="text" placeholder="0 от">
+            </li>
+            <li>
+              <input type="text" placeholder="9000 до">
+            </li>
+            <li>
+              <input type="range" min="0" max="9000">
+            </li>
+          </ul>
+        </fieldset>
+        <ul>
+        <button type="submit">Применить</button>
+        <button type="submit">Сбросить</button>
+      </ul>
+      </form>
+    </main>
+
+    <footer class="page-footer">
+      <section class="follow">
+        <h2>Подпишитесь на рассылку</h2>
+        <p>
+          Только полезная информация и никакого спама, честное бойскаутское!
+        </p>
+        <ul class="follow-list"></ul>
+        <form
+          class="follow-item"
+          method="post"
+          action="https://echo.htmlacademy.ru/"
+        >
+          <input type="email" name="email" placeholder="Ваш e-mail" />
+          <button class="button-follow" type="submit">Подписаться</button>
+        </form>
+      </section>
+      <section class="footer-contacts">
+        <ul class="contacts-list">
+          <li class="contacts-item">
+            <a href="https://twitter.com/htmlacademy_ru" alt="Твиттер">
+              <span class="visually-hidden">Твиттер</span>
+            </a>
+          </li>
+          <li class="contacts-item">
+            <a href="https://www.facebook.com/htmlacademy" alt="Фейсбуук">
+              <span class="visually-hidden">Фейсбук</span>
+            </a>
+          </li>
+          <li class="contacts-item">
+            <a href="#" alt="Инстаграмм">
+              <span class="visually-hidden">Инстаграмм</span>
+            </a>
+          </li>
+        </ul>
+        <div class="contacts-item">
+          <a class="contacts-phone" href="tel:88128121212"
+            >+7 (812) 812-12-12</a
+          >
+        </div>
+        <div class="contacts-item">
+          <a class="logo-html" href="#">
+            <span class="visually-hidden">Логотип HTML</span>
+          </a>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>
