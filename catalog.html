@@ -63,8 +63,8 @@
       <form
         class="catalog-filter"
         action="https://echo.htmlacademy.ru/"
-        method="get">
-
+        method="get"
+      >
         <fieldset class="catalog-filter infrastructure">
           <legend class="infrastructure-name">Инфрастуктура</legend>
           <ul>
@@ -144,25 +144,27 @@
         </fieldset>
 
         <fieldset>
-          <legend>
-            Стоимость,&#8381:
-          </legend>
+          <legend>Стоимость,₽:</legend>
           <ul>
             <li>
-              <input type="text" placeholder="0 от">
+              <input type="text" name="price-min" placeholder="0 от" />
             </li>
             <li>
-              <input type="text" placeholder="9000 до">
+              <input type="text" name="price-max" placeholder="9000 до" />
             </li>
             <li>
-              <input type="range" min="0" max="9000">
+              <input type="range" min="0" max="9000" />
             </li>
           </ul>
         </fieldset>
         <ul>
-        <button type="submit">Применить</button>
-        <button type="submit">Сбросить</button>
-      </ul>
+          <li>
+            <button type="submit">Применить</button>
+          </li>
+          <li>
+            <button type="submit">Сбросить</button>
+          </li>
+        </ul>
       </form>
     </main>
 
