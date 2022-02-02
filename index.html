@@ -3,10 +3,18 @@
   <head>
     <meta charset="utf-8" />
     <title>Седона</title>
+    <link href="styles/style.css" rel="stylesheet" />
   </head>
 
   <body>
     <header class="page-header">
+      <img
+        class="logo"
+        src="images/logo.svg"
+        width="139"
+        height="70"
+        alt="Логотип"
+      />
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
@@ -21,16 +29,16 @@
         </ul>
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link" href="#">
+            <a class="navigation-link sprajt-search" href="#">
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
-          <li class="visually-hidden">
-            <a class="navigation-link" href="#">
-              <span class="visiually-hidden"> Избранное</span>
+          <li class="navigation-item">
+            <a class="navigation-link sprajt-favorites" href="#">
+              <span class="visually-hidden"> Избранное</span>
             </a>
           </li>
-          <li class="visually-hidden">
+          <li class="navigation-item">
             <a class="navigation-link" href="#"> Хочу сюда!</a>
           </li>
         </ul>
@@ -39,10 +47,20 @@
 
     <main class="main-index">
       <section class="card">
-        <p class="card-welcome">Welcome</p>
-        <p class="card-gardgeouse">-to the gargeous-</p>
         <h1 class="visually-hidden">SEDONA</h1>
-        <h2>Седона - небольшой городок в аризоне, заслуживащий большего!</h2>
+        <img
+          class="welcome"
+          src="images/welcome.svg"
+          width="458"
+          height="352"
+        />
+      </section>
+
+      <section class="facts">
+        <h2>
+          Седона - небольшой городок в аризоне,<br />
+          заслуживащий большего!
+        </h2>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем Гран-каньон</p>
       </section>
       <section class="advantages">
@@ -52,24 +70,28 @@
             <h3>Настоящий городок</h3>
             <p>-№1-</p>
             <p>Седона-не атракцион для туристов, там течет своя жизнь</p>
-          </li>
-          <li class="advantages-item">
-            <img src="" alt="Город" />
+            <img
+              class="advantages-real-city"
+              src="images/real-city .jpg"
+              width="800"
+              height="384"
+              alt="Настоящий город"
+            />
           </li>
           <li>
             <ul class="recommendations-list">
-              <li class="recommendations-item">
+              <li class="recommendations-item sprajt-housing">
                 <h3>Жильё</h3>
                 <p>Рекомундуем пожить в настоящем мотеле, всё как в кино!</p>
               </li>
-              <li class="recommendations-item">
+              <li class="recommendations-item sprajt-eat">
                 <h3>Еда</h3>
                 <p>
                   Всегда заказывайте топовый фирменный бургер, вы не
                   разочаруетесь!
                 </p>
               </li>
-              <li class="recommendations-item">
+              <li class="recommendations-item sprajt-souvenirs">
                 <h3>Сувениры</h3>
                 <p>
                   Не только китайского, но и настоящего местного производства!
@@ -78,12 +100,16 @@
             </ul>
           </li>
           <li class="advantages-item">
+            <img
+              class="img-bridge-devill"
+              src="images/bridge-devill.jpg"
+              weight="800"
+              height="384"
+              alt="Мост дьявола"
+            />
             <h3>Там есть мост дьявола</h3>
             <p>-№2-</p>
             <p>Да, по нему можно пройти! Если вы осмелитесь разумеется</p>
-          </li>
-          <li class="advantages-item">
-            <img src="" alt="Мост дъявола" />
           </li>
           <li class="advantages small-square-3">
             <h3>Небольшая площадь</h3>
@@ -134,18 +160,30 @@
       <section class="footer-contacts">
         <ul class="contacts-list">
           <li class="contacts-item">
-            <a href="https://twitter.com/htmlacademy_ru" alt="Твиттер">
+            <a
+              class="sprajt-footer twitter"
+              href="https://twitter.com/htmlacademy_ru"
+              alt="Твиттер"
+            >
               <span class="visually-hidden">Твиттер</span>
             </a>
           </li>
           <li class="contacts-item">
-            <a href="https://www.facebook.com/htmlacademy" alt="Фейсбуук">
+            <a
+              class="sprajt-footer facebook"
+              href="https://www.facebook.com/htmlacademy"
+              alt="Фейсбуук"
+            >
               <span class="visually-hidden">Фейсбук</span>
             </a>
           </li>
           <li class="contacts-item">
-            <a href="#" alt="Инстаграмм">
-              <span class="visually-hidden">Инстаграмм</span>
+            <a
+              class="sprajt-footer youtube"
+              href="https://www.youtube.com/c/HTMLAcademyRUS"
+              alt="Ютуб"
+            >
+              <span class="visually-hidden">Ютуб</span>
             </a>
           </li>
         </ul>
@@ -155,7 +193,7 @@
           >
         </div>
         <div class="contacts-item">
-          <a class="logo-html" href="#">
+          <a class="sprajt-footer logo-footer" href="#">
             <span class="visually-hidden">Логотип HTML</span>
           </a>
         </div>
