@@ -3,18 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <title>Седона</title>
-    <link href="styles/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/style.css" />
   </head>
 
   <body>
     <header class="page-header">
-      <img
-        class="logo"
-        src="images/logo.svg"
-        width="139"
-        height="70"
-        alt="Логотип"
-      />
+      <a class="navigation-link" href="index.html">
+        <img
+          class="logo"
+          src="images/logo.svg"
+          width="139"
+          height="70"
+          alt="Логотип"
+        />
+      </a>
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
@@ -29,17 +31,17 @@
         </ul>
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link sprajt-search" href="#">
+            <a class="navigation-link search" href="/index.html">
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link sprajt-favorites" href="#">
+            <a class="navigation-link favorites" href="/index.html">
               <span class="visually-hidden"> Избранное</span>
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#"> Хочу сюда!</a>
+            <a class="navigation-link" href="/index.html"> Хочу сюда!</a>
           </li>
         </ul>
       </nav>
@@ -50,7 +52,7 @@
         <h1 class="visually-hidden">SEDONA</h1>
         <img
           class="welcome"
-          src="images/welcome.svg"
+          src="images/index-welcome.svg"
           width="458"
           height="352"
         />
@@ -72,7 +74,7 @@
             <p>Седона-не атракцион для туристов, там течет своя жизнь</p>
             <img
               class="advantages-real-city"
-              src="images/real-city .jpg"
+              src="images/index-advantage-realcity .jpg"
               width="800"
               height="384"
               alt="Настоящий город"
@@ -80,18 +82,18 @@
           </li>
           <li>
             <ul class="recommendations-list">
-              <li class="recommendations-item sprajt-housing">
+              <li class="recommendations-item housing">
                 <h3>Жильё</h3>
                 <p>Рекомундуем пожить в настоящем мотеле, всё как в кино!</p>
               </li>
-              <li class="recommendations-item sprajt-eat">
+              <li class="recommendations-item eat">
                 <h3>Еда</h3>
                 <p>
                   Всегда заказывайте топовый фирменный бургер, вы не
                   разочаруетесь!
                 </p>
               </li>
-              <li class="recommendations-item sprajt-souvenirs">
+              <li class="recommendations-item souvenirs">
                 <h3>Сувениры</h3>
                 <p>
                   Не только китайского, но и настоящего местного производства!
@@ -102,7 +104,7 @@
           <li class="advantages-item">
             <img
               class="img-bridge-devill"
-              src="images/bridge-devill.jpg"
+              src="images/index-advantage-bridgedevill.jpg"
               weight="800"
               height="384"
               alt="Мост дьявола"
@@ -161,7 +163,7 @@
         <ul class="contacts-list">
           <li class="contacts-item">
             <a
-              class="sprajt-footer twitter"
+              class="footer twitter"
               href="https://twitter.com/htmlacademy_ru"
               alt="Твиттер"
             >
@@ -170,7 +172,7 @@
           </li>
           <li class="contacts-item">
             <a
-              class="sprajt-footer facebook"
+              class="footer facebook"
               href="https://www.facebook.com/htmlacademy"
               alt="Фейсбуук"
             >
@@ -179,7 +181,7 @@
           </li>
           <li class="contacts-item">
             <a
-              class="sprajt-footer youtube"
+              class="footer youtube"
               href="https://www.youtube.com/c/HTMLAcademyRUS"
               alt="Ютуб"
             >
@@ -193,8 +195,13 @@
           >
         </div>
         <div class="contacts-item">
-          <a class="sprajt-footer logo-footer" href="#">
-            <span class="visually-hidden">Логотип HTML</span>
+          <a class="footer logo-footer" href="https://htmlacademy.ru/">
+            <img
+              src="images/logo-footer.svg"
+              width="115"
+              height="33"
+              alt="Логотип html academy"
+            />
           </a>
         </div>
       </section>
