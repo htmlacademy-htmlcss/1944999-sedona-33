@@ -1,0 +1,78 @@
+body {
+  font-family:"PT Sans", sans-serif;
+  width: 1280px;
+  margin: 0 auto;
+  background-color: #fbf7f4;
+  color: #242424;
+}
+
+@font-face {
+  font-family:"PT Sans" ;
+  font-style:normal;
+  font-weight:400;
+  font-size: 18;
+  line-height: 21;
+  color: #333333;
+  src: url("/1944999-sedona-33/fonts/ptsans-400.woff2") format("woff2");
+font-display: swap;
+}
+
+@font-face {
+  font-family:"PT Sans" ;
+  font-style:normal;
+  font-weight:700;
+  font-size: 18;
+  line-height: 21;
+  color:#333333;
+  src: url("/1944999-sedona-33/fonts/ptsans-400.woff2") format("woff2");
+font-display: swap;
+
+}
+.card {
+
+  background:url("/1944999-sedona-33/images/index-background-mask.svg") no-repeat bottom,
+  url("/1944999-sedona-33/images/index-background.jpg") no-repeat center;
+   height: 485px;
+   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+
+.welcome {
+  display: block;
+ margin: auto;
+}
+a {
+  font-family: "PT Sans", sans-serif;
+  color: black;
+  font-weight: 700;
+}
+
+.follow {
+  background-image: url("/1944999-sedona-33/images/index-background-follow.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 1200px;
+height: 411px;
+}
+
+.filter {
+  background-image: url("/1944999-sedona-33/images/catalog-background-filter.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 1200px;
+
+}
+
+}
+/*.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+*/
