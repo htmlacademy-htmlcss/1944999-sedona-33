@@ -1,8 +1,36 @@
 body {
+  font-family:"PT Sans", sans-serif;
   width: 1280px;
   margin: 0 auto;
+  background-color: #fbf7f4;
+  color: #242424;
 }
 
+@font-face {
+  font-family:"PT Sans" ;
+  font-style:normal;
+  font-weight:400;
+  font-size: 18;
+  line-height: 21;
+  color: #333333;
+  src: url("/1944999-sedona-33/fonts/ptsans-400.woff2") format("woff2");
+font-display: swap;
+}
+
+@font-face {
+  font-family:"PT Sans" ;
+  font-style:normal;
+  font-weight:700;
+  font-size: 18;
+  line-height: 21;
+  color:#333333;
+  src: url("/1944999-sedona-33/fonts/ptsans-400.woff2") format("woff2");
+font-display: swap;
+
+}
+
+
+}
 /*.visually-hidden {
   position: absolute;
   width: 1px;
