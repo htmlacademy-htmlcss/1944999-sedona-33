@@ -3,10 +3,14 @@
   <head>
     <meta charset="utf-8" />
     <title>Седона</title>
+    <link rel="stylesheet" href="styles/style.css" />
   </head>
 
   <body>
     <header class="page-header">
+      <a href="index.html">
+      <img class="logo" src="images/logo.svg" width="139" height="70" alt="Логотип"/>
+      </a>
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
@@ -21,28 +25,32 @@
         </ul>
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link" href="#">
+            <a class="navigation-link search" href="/index.html">
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
-          <li class="visually-hidden">
-            <a class="navigation-link" href="#">
-              <span class="visiually-hidden"> Избранное</span>
+          <li class="navigation-item">
+            <a class="navigation-link favorites" href="/index.html">
+              <span class="visually-hidden"> Избранное</span>
             </a>
           </li>
-          <li class="visually-hidden">
-            <a class="navigation-link" href="#"> Хочу сюда!</a>
+          <li class="navigation-item">
+            <a class="navigation-link" href="/index.html"> Хочу сюда!</a>
           </li>
         </ul>
       </nav>
     </header>
 
     <main class="main-index">
+
       <section class="card">
-        <p class="card-welcome">Welcome</p>
-        <p class="card-gardgeouse">-to the gargeous-</p>
         <h1 class="visually-hidden">SEDONA</h1>
-        <h2>Седона - небольшой городок в аризоне, заслуживащий большего!</h2>
+        <img class="welcome" src="images/index-welcome.svg" width="458" height="352"/>
+      </section>
+
+      <section class="facts">
+        <h2>Седона - небольшой городок в аризоне,<br/>заслуживащий большего!
+        </h2>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем Гран-каньон</p>
       </section>
       <section class="advantages">
@@ -52,38 +60,31 @@
             <h3>Настоящий городок</h3>
             <p>-№1-</p>
             <p>Седона-не атракцион для туристов, там течет своя жизнь</p>
-          </li>
-          <li class="advantages-item">
-            <img src="" alt="Город" />
+            <img class="advantages-real-city" src="images/index-advantage-realcity .jpg"
+              width="800" height="384" alt="Настоящий город"/>
           </li>
           <li>
             <ul class="recommendations-list">
-              <li class="recommendations-item">
+              <li class="recommendations-item housing">
                 <h3>Жильё</h3>
                 <p>Рекомундуем пожить в настоящем мотеле, всё как в кино!</p>
               </li>
-              <li class="recommendations-item">
+              <li class="recommendations-item eat">
                 <h3>Еда</h3>
-                <p>
-                  Всегда заказывайте топовый фирменный бургер, вы не
-                  разочаруетесь!
-                </p>
+                <p>Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
               </li>
-              <li class="recommendations-item">
+              <li class="recommendations-item souvenirs">
                 <h3>Сувениры</h3>
-                <p>
-                  Не только китайского, но и настоящего местного производства!
-                </p>
+                <p>Не только китайского, но и настоящего местного производства!</p>
               </li>
             </ul>
           </li>
           <li class="advantages-item">
+            <img class="img-bridge-devill" src="images/index-advantage-bridgedevill.jpg"
+              weight="800" height="384" alt="Мост дьявола" />
             <h3>Там есть мост дьявола</h3>
             <p>-№2-</p>
             <p>Да, по нему можно пройти! Если вы осмелитесь разумеется</p>
-          </li>
-          <li class="advantages-item">
-            <img src="" alt="Мост дъявола" />
           </li>
           <li class="advantages small-square-3">
             <h3>Небольшая площадь</h3>
@@ -102,61 +103,51 @@
           </li>
         </ul>
       </section>
+
       <section class="search-hotel">
         <h2 class="visualy-hidden">Поиск гостиницы</h2>
         <h3>Заинтересовались?</h3>
-        <p>
-          Укажите предполагаемые даты поездки, и мы покажем вам лучшие
-          предложения гостиниц в Седоне
-        </p>
-        <a class="button-catalog" href="catalog.html"
-          >Поиск гостиницы в седоне</a
-        >
+        <p> Укажите предполагаемые даты поездки, и мы покажем вам лучшие
+          предложения гостиниц в Седоне</p>
+        <a class="button-catalog" href="catalog.html">Поиск гостиницы в седоне</a>
       </section>
+
     </main>
 
     <footer class="page-footer">
       <section class="follow">
         <h2>Подпишитесь на рассылку</h2>
-        <p>
-          Только полезная информация и никакого спама, честное бойскаутское!
-        </p>
-        <ul class="follow-list"></ul>
-        <form
-          class="follow-item"
-          method="post"
-          action="https://echo.htmlacademy.ru/"
-        >
+        <p> Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <form class="follow-item" method="post" action="https://echo.htmlacademy.ru/">
           <input type="email" name="email" placeholder="Ваш e-mail" />
           <button class="button-follow" type="submit">Подписаться</button>
         </form>
       </section>
+
       <section class="footer-contacts">
         <ul class="contacts-list">
           <li class="contacts-item">
-            <a href="https://twitter.com/htmlacademy_ru" alt="Твиттер">
+            <a class="footer twitter" href="https://twitter.com/htmlacademy_ru" alt="Твиттер">
               <span class="visually-hidden">Твиттер</span>
             </a>
           </li>
           <li class="contacts-item">
-            <a href="https://www.facebook.com/htmlacademy" alt="Фейсбуук">
+            <a class="footer facebook" href="https://www.facebook.com/htmlacademy" alt="Фейсбуук">
               <span class="visually-hidden">Фейсбук</span>
             </a>
           </li>
           <li class="contacts-item">
-            <a href="#" alt="Инстаграмм">
-              <span class="visually-hidden">Инстаграмм</span>
+            <a class="footer youtube" href="https://www.youtube.com/c/HTMLAcademyRUS" alt="Ютуб">
+              <span class="visually-hidden">Ютуб</span>
             </a>
           </li>
         </ul>
         <div class="contacts-item">
-          <a class="contacts-phone" href="tel:88128121212"
-            >+7 (812) 812-12-12</a
-          >
+          <a class="contacts-phone" href="tel:88128121212">+7 (812) 812-12-12</a>
         </div>
         <div class="contacts-item">
-          <a class="logo-html" href="#">
-            <span class="visually-hidden">Логотип HTML</span>
+          <a class="footer logo-footer" href="https://htmlacademy.ru/">
+            <img src="images/logo-footer.svg" width="115" height="33" alt="Логотип html academy"/>
           </a>
         </div>
       </section>
