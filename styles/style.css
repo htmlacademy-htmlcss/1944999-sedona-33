@@ -101,7 +101,7 @@ body {
   text-align: center;
 }
 
-.recommendations-item h3{
+.recommendations-item-title{
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -125,6 +125,22 @@ body {
   line-height: 26px;
   text-align: center;
   color:#333333;
+}
+
+.page-footer{
+text-align: center;
+}
+
+.follow-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.follow-paragraf {
+  font-size: 22px;
+  line-height: 26px;
 }
 
 .button-catalog {
@@ -199,7 +215,7 @@ body {
   line-height: 21px;
 }
 
-.legend{
+.type-filter{
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
@@ -236,7 +252,7 @@ body {
   text-transform: uppercase;
 }
 
-select {
+.select-price {
   font-size: 18px;
   line-height: 23px;
 }
