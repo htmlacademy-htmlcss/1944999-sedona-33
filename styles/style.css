@@ -1,7 +1,7 @@
 @font-face {
-  font-family:"PT Sans" ;
-  font-style:normal;
-  font-weight:400;
+  font-family: "PT Sans" ;
+  font-style: normal;
+  font-weight: 400;
   font-size: 18;
   line-height: 21;
   color: #333333;
@@ -10,9 +10,9 @@
 }
 
 @font-face {
-  font-family:"PT Sans" ;
-  font-style:normal;
-  font-weight:700;
+  font-family: "PT Sans" ;
+  font-style: normal;
+  font-weight: 700;
   font-size: 18px;
   line-height: 21px;
   color:#333333;
@@ -24,27 +24,26 @@ body {
   font-family: "PT Sans", "Aria", sans-serif;
   font-style: normal;
   font-weight:400;
+  font-size: 18px;
+  line-height: 21px;
   width: 1280px;
   margin: 0 auto;
   background-color: #fbf7f4;
   color: #000000;
 }
 
-li {
-  list-style-type:none;
-  padding-left: 0;
-  margin-left: 0;
-}
-
 .navigation-link {
+  font-family: "PT Sans", "Aria", sans-serif;
   font-weight: 700;
   color: #000000;
   font-size: 20px;
   line-height: 26px;
+  text-align: center;
+  text-decoration: none;
 }
 
 .want-here {
-  font-weight:700;
+  font-weight: 700;
   font-size: 16px;
   line-height: 20px;
 }
@@ -61,7 +60,7 @@ li {
   url("/images/index-background.jpg");
   background-repeat: no-repeat;
   background-position: bottom;
-  height: 485px;
+  background-size: 100% auto;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
@@ -69,13 +68,13 @@ li {
   text-align: center;
 }
 
-.facts h2 {
+.facts-header {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
 }
 
-.facts p {
+.facts-causes {
   font-size: 22px;
   line-height: 36px;
 }
@@ -86,15 +85,15 @@ li {
 
 .advantages-item.real-city {
   background-color:#83B3D3 ;
-  color:#FFFFFF ;
+  color: #FFFFFF ;
   font-size: 18px;
   line-height: 21px;
 }
 
-.advantages-item h3 {
+.advantages-title {
   font-size: 24px;
   line-height: 28px;
-  text-transform:uppercase ;
+  text-transform: uppercase ;
 }
 
 
@@ -113,25 +112,30 @@ li {
   text-align: center;
 }
 
-.search-hotel h3 {
+.search-hotel-question {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
+  text-align: center;
   text-transform: uppercase;
 }
 
-.search-hotel p {
+.search-hotel-paragraf {
   font-size: 22px;
   line-height: 26px;
+  text-align: center;
+  color:#333333;
 }
 
 .button-catalog {
+  font-family: inherit;
   background-color:#756257 ;
   color:#FFFFFF ;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 .follow {
@@ -142,19 +146,20 @@ li {
   color:#FFFFFF;
 }
 
-.page-footer h2 {
+.page-footer-title {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
 }
 
-.page-footer p {
+.page-footer-paragraf {
   font-size: 22px;
   line-height: 26px;
   }
 
 .button-follow{
+  font-family: inherit;
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
@@ -170,6 +175,7 @@ li {
   color: #000000;
   font-size: 40px;
   line-height: 40px;
+  text-decoration: none;
 }
 
 /* Стилизация каталога */
@@ -182,7 +188,7 @@ li {
   color: #FFFFFF;
 }
 
-.header-filter h1 {
+.filter-header-title {
   font-weight:700;
   font-size: 60px;
   line-height: 78px;
@@ -206,6 +212,7 @@ li {
 
 .button-apply,
 .button-reset {
+  font-family: inherit;
   color: #FFFFFF;
 }
 
@@ -222,7 +229,7 @@ li {
   line-height: 23px;
 }
 
-.sorting p {
+.sorting-result {
   font-weight: 700;
   font-size: 30px;
   line-height: 39px;
@@ -234,11 +241,15 @@ select {
   line-height: 23px;
 }
 
+.result-card-title a {
+  text-decoration: none;
+}
+
 .result-card-title-item {
   font-weight: 700;
   font-size: 24px;
   line-height: 31px;
-  color: #000000
+  color: #000000;
 }
 
 .hotel-price-item {
@@ -247,29 +258,36 @@ select {
 }
 
 .button-more-link {
+  font-family: inherit;
   font-size: 16px;
   line-height: 21px;
   text-transform: uppercase;
   background-color: #756257;
   color: #FFFFFF;
+  text-decoration: none;
+
 }
 
 .button-favorites-link-off {
+  font-family: inherit;
   background-color: #83B3D3;
   color: #FFFFFF;
   font-weight: 700;
   font-size: 16px;
   line-height: 21px;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 .button-favorites-link-on {
+  font-family: inherit;
   background-color: #7DB54F;
   color: #FFFFFF;
   font-weight: 700;
   font-size: 16px;
   line-height: 21px;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 .rating {
@@ -286,6 +304,12 @@ select {
   font-size: 20px;
   line-height: 26px;
   text-transform: uppercase;
+  text-decoration: none;
+}
+
+.pagination-current {
+  background-color: #FFFFFF;
+  color: #000000;
 }
 
 .hotel-in-page-title,
@@ -294,6 +318,10 @@ select {
   line-height: 23px;
 }
 
+.contacts-list a {
+  text-decoration: none;
+  color: #000000;
+}
 
 
 /* .visually-hidden {
