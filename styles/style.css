@@ -20,6 +20,19 @@
   font-display: swap;
 }
 
+/* .visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+} */
+
 body {
   font-family: "PT Sans", "Aria", sans-serif;
   font-style: normal;
@@ -96,7 +109,6 @@ body {
   text-transform: uppercase ;
 }
 
-
 .recommendations-item {
   text-align: center;
 }
@@ -127,7 +139,7 @@ body {
   color:#333333;
 }
 
-.page-footer{
+.page-footer {
 text-align: center;
 }
 
@@ -174,7 +186,7 @@ text-align: center;
   line-height: 26px;
   }
 
-.button-follow{
+.button-follow {
   font-family: inherit;
   font-weight: 700;
   font-size: 20px;
@@ -183,7 +195,7 @@ text-align: center;
   background-color: #83B3D3;
   color: #FFFFFF;
   border-radius: 0px 10px 10px 0px;
-  border-width: 1 px;
+  border-width: 1px;
   border-color: #000000;
 }
 
@@ -215,13 +227,13 @@ text-align: center;
   line-height: 21px;
 }
 
-.type-filter{
+.type-filter {
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
 }
 
-.type-filter-list{
+.type-filter-list {
   font-size: 18px;
   line-height: 23px;
 }
@@ -338,18 +350,3 @@ text-align: center;
   text-decoration: none;
   color: #000000;
 }
-
-
-/* .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-} */
-
