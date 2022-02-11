@@ -8,13 +8,13 @@
 
   <body>
     <header class="page-header">
-      <a href="index.html">
-      <img class="logo" src="images/logo.svg" width="139" height="70" alt="Логотип"/>
-      </a>
       <nav class="navigation">
-        <ul class="navigation-list">
+        <a href="index.html">
+          <img class="logo" src="images/logo.svg" width="139" height="70" alt="Логотип"/>
+        </a>
+        <ul class="navigation-list nav-header">
           <li class="navigation-item">
-            <a class="navigation-link" href="index.html">Главная</a>
+            <a class="navigation-link " href="index.html">Главная</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">О седоне</a>
@@ -23,7 +23,7 @@
             <a class="navigation-link" href="catalog.html"> Гостиницы</a>
           </li>
         </ul>
-        <ul class="navigation-list">
+        <ul class="navigation-list nav-user-menu">
           <li class="navigation-item">
             <a class="navigation-link search" href="#">
               <span class="visually-hidden">Поиск</span>
@@ -31,10 +31,10 @@
           </li>
           <li class="navigation-item">
             <a class="navigation-link favorites" href="#">
-              <span class="visually-hidden"> Избранное</span>
+              <span class="visually-hidden">Избранные</span>
             </a>
           </li>
-          <li class="navigation-item">
+          <li class="navigation-item list-want-here">
             <a class="navigation-link want-here" href="#"> Хочу сюда!</a>
           </li>
         </ul>
@@ -45,10 +45,15 @@
       <section class="filter-header">
         <h1 class="filter-header-title">Гостиницы Седоны</h1>
         <ol class="breadcrumbs">
-          <li class="breadcrumbs-list home">
-            <a class="breadcrumbs-item breadcrumbs" href="index.html">
-              <span class="visually-hidden">Главная</span>
+          <li class="breadcrumbs-list ">
+            <a class="breadcrumbs-item breadcrumbs-home" href="index.html">
+              <span class="visually-hidden">Г</span>
             </a>
+          </li>
+          <li class="breadcrumbs-list ">
+          <img  class="breadcrumbs-item" src="/images/catalog-breadcrumbs-element.svg" width="5" height="8">
+          </li>
+          <li class="breadcrumbs-list ">
             <a class="breadcrumbs-item">Гостиницы</a>
           </li>
         </ol>
@@ -56,22 +61,22 @@
 
       <h2 class="visually-hidden">Фильтр гостиниц</h2>
       <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-        <div class="filter-type">
-        <fieldset>
-          <legend class="type-filter infrastructure">Инфрастуктура</legend>
-          <ul class="type-filter-list">
-            <li>
+      <div class="filter-type-container">
+        <fieldset class="filter-fieldset-infrastructure">
+          <legend class="filter-type infrastructure">Инфрастуктура</legend>
+          <ul class="filter-type-list">
+            <li class="filter-type-elements">
               <label>
                 <input type="checkbox" name="swimming-pool" checked />
                 Бассейн
               </label>
             </li>
-            <li>
+            <li class="filter-type-elements">
               <label>
                 <input  type="checkbox" name="parking" checked />Парковка
               </label>
             </li>
-            <li>
+            <li class="filter-type-elements">
               <label>
                 <input  type="checkbox" name="wi-fi" />
                 Wi-FI
@@ -80,22 +85,22 @@
           </ul>
         </fieldset>
 
-        <fieldset>
-          <legend class="type-filter housing">Тип жилья</legend>
-          <ul class="type-filter-list">
-            <li class="type-filter-elements">
+        <fieldset class="filter-fieldset-housing">
+          <legend class="filter-type housing">Тип жилья</legend>
+          <ul class="filter-type-list">
+            <li class="filter-type-elements">
               <label>
                 <input  type="radio" name="type-housing" value="hotel" checked />
                 Отель
               </label>
             </li>
-            <li>
+            <li class="filter-type-elements">
               <label>
                 <input  type="radio" name="type-housing" value="motel" />
                 Мотель
               </label>
             </li>
-            <li>
+            <li class="filter-type-elements">
               <label>
                 <input type="radio" name="type-housing" value="apartments" />
                 Апартаменты
@@ -106,14 +111,14 @@
 
         <fieldset>
           <legend>Стоимость,₽:</legend>
-          <ul>
-            <li>
+          <ul class="filter-type-list">
+            <li >
               <input type="text" name="price-min" placeholder="0 от" />
             </li>
-            <li>
+            <li class="filter-type-list">
               <input type="text" name="price-max" placeholder="9000 до" />
             </li>
-            <li>
+            <li class="filter-type-list">
               <input type="range" min="0" max="9000" />
             </li>
           </ul>
@@ -125,8 +130,10 @@
       </section>
     </div>
 
+    <main class="main-container">
+
       <section class="sorting">
-        <h2 class="visual-hidden">Сортировка гостиниц</h2>
+        <h2 class="visually-hidden">Сортировка гостиниц</h2>
         <p class="sorting-result">НАЙДЕНО ГОСТИНИЦ:38</p>
         <select class="select-price" name="select-price" aria-label="Сортировка">
           <option value="cheap">Сначала дешевый</option>
@@ -134,16 +141,18 @@
         </select>
         <ul class="view">
           <li class="view-list">
-            <a class="sorting table" href="#"><span class="visually-hidden">Таблица</span></a>
+            <a class="sorting-table" href="#"><span class="visually-hidden">Таблица</span></a>
           </li>
           <li class="view-list">
-            <a class="sorting carousel" href="#"><span class="visually-hidden">Карусель</span></a>
+            <a class="sorting-carousel" href="#"><span class="visually-hidden">Карусель</span></a>
           </li>
           <li class="view-list">
-            <a class="sorting list" href="#"><span class="visually-hidden">Список</span></a>
+            <a class="sorting-list" href="#"><span class="visually-hidden">Список</span></a>
           </li>
         </ul>
       </section>
+
+    <div class="result-container">
 
       <section class="result">
         <ul class="result-list">
@@ -243,9 +252,11 @@
         </ul>
       </section>
 
-      <div>
+      <div class="button-loading-container">
         <a class="button-loading-more" href="#">Загрузить ещё</a>
       </div>
+
+    </div>
 
       <section class="pagination">
         <ul class="pagination-list">
@@ -268,6 +279,7 @@
             <a class="pagination-link " href="#">10</a>
           </li>
         </ul>
+
         <p class="hotel-in-page-title">Гостиниц на странице:</p>
         <select class="select-number">
           <option value="1">1</option>
@@ -275,6 +287,7 @@
           <option value="3">3</option>
           <option value="4" selected="selected">4</option>
         </select>
+
       </section>
     </main>
 
