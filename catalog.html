@@ -113,13 +113,13 @@
           <legend class="legend-filter-type-price">Стоимость,₽:</legend>
           <ul class="filter-type-list-price">
             <li>
-              <input type="text" name="price-min" placeholder="0 от" />
+              <input class="filter-input price-min" type="text" name="price-min" placeholder="от" />
             </li>
-            <li class="filter-type-list-price">
-              <input type="text" name="price-max" placeholder="9000 до" />
+            <li>
+              <input class="filter-input price-max" type="text" name="price-max" placeholder="до" />
             </li>
           </ul>
-          <input type="range" min="0" max="9000" />
+          <input class="filter-input-range" type="range" min="0" max="9000" />
         </fieldset>
         <div class="button-apply-reset-container">
           <button class="button-apply" type="submit">Применить</button>
@@ -133,20 +133,20 @@
 
       <section class="sorting">
         <h2 class="visually-hidden">Сортировка гостиниц</h2>
-        <p class="sorting-result">НАЙДЕНО ГОСТИНИЦ:38</p>
+        <p class="sorting-result">найдено гостиниц:38</p>
         <select class="select-price" name="select-price" aria-label="Сортировка">
           <option value="cheap">Сначала дешевый</option>
           <option value="rich">Сначала дорогие</option>
         </select>
         <ul class="view">
           <li class="view-list">
-            <a class="sorting-table" href="#"><span class="visually-hidden">Таблица</span></a>
+            <a class="sorting-item sorting-table" href="#"><span class="visually-hidden">Таблица</span></a>
           </li>
           <li class="view-list">
-            <a class="sorting-carousel" href="#"><span class="visually-hidden">Карусель</span></a>
+            <a class="sorting-item sorting-carousel" href="#"><span class="visually-hidden">Карусель</span></a>
           </li>
           <li class="view-list">
-            <a class="sorting-list" href="#"><span class="visually-hidden">Список</span></a>
+            <a class="sorting-item sorting-list" href="#"><span class="visually-hidden">Список</span></a>
           </li>
         </ul>
       </section>
@@ -252,7 +252,7 @@
       </section>
 
       <div class="button-loading-container">
-        <a class="button-loading-more" href="#">Загрузить ещё</a>
+        <a class="button-loading-more" href="#"><span class="button-loading-more-text-container">Загрузить ещё</span></a>
       </div>
 
     </div>
@@ -292,10 +292,10 @@
 
     <footer class="page-footer">
       <section class="follow-catalog">
-        <h2>Подпишитесь на рассылку</h2>
-        <p> Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <h2 class="follow-catalog-h2">Подпишитесь на рассылку</h2>
+        <p class="follow-catalog-p"> Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="follow-item" method="post" action="https://echo.htmlacademy.ru/">
-          <input type="email" name="email" placeholder="Ваш e-mail" />
+          <input class="follow-catalog-input" type="email" name="email" placeholder="Ваш e-mail" />
           <button class="button-follow" type="submit">Подписаться</button>
         </form>
       </section>
