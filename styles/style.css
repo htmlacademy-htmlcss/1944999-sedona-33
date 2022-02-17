@@ -157,9 +157,6 @@ body {
   min-height: 485px;
   background-size: auto;
   max-width: 1200px;
-
-
-
 }
 
 .facts {
@@ -167,12 +164,6 @@ body {
   flex-direction: column;
   align-items: center;
   min-height: 282px;
-
-
-
-  /* margin:0 auto;
-  padding-top: 63px;
-  padding-bottom: 80px;  */
 }
 
 .facts-header {
@@ -189,7 +180,6 @@ body {
   line-height: 36px;
   max-width: 720px;
   margin-top: 0;
-  /* margin-bottom: 80px; */
 }
 
 .advantages-list {
@@ -228,7 +218,6 @@ body {
   list-style-type: none;
   max-width: 250px;
   min-height: 384px;
-
 }
 
 .recommendations-item-title {
@@ -294,7 +283,6 @@ body {
 .advantages-title-text {
   max-width: 250px;
   margin: 0;
-
 }
 
 .advantages-item-3,
@@ -368,15 +356,13 @@ max-width: 1200px;
 
 
 .follow-catalog-input {
-  left: calc(50% - 600px/2 + 500px);
   bottom: 261px;
   background: #F2F2F2;
   border-radius: 10px 0 0 10px;
-  /* transform: matrix(-1, 0, 0, 1, 0, 0); */
   max-width: 600px;
   flex-grow: 1;
   border: 0;
-  /* text-align: right; */
+
 }
 
 .button-follow {
@@ -398,7 +384,6 @@ max-width: 1200px;
   background-color: #000000;
   color: #FFFFFF;
   min-height: 411px;
-
 }
 
 .follow-title {
@@ -422,14 +407,12 @@ max-width: 1200px;
 .button-catalog-container {
   display: flex;
   min-height: 60px;
-  align-self:stretch;
-  justify-content:center;
-
-
+  align-self: stretch;
+  justify-content: center;
 }
 
 .button-catalog {
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   font-family: inherit;
@@ -506,7 +489,6 @@ max-width: 1200px;
   margin: 0;
   margin-bottom: 5px;
   margin-top: 30px;
-
 }
 
 .breadcrumbs {
@@ -560,8 +542,6 @@ max-width: 1200px;
   margin: 0;
   margin-bottom: 32px;
   display: flex;
-  /* align-items: center; */
-  /* flex-direction: column; */
   height: 48px;
   list-style-type:none;
   max-width: 287px;
@@ -575,7 +555,6 @@ max-width: 1200px;
   margin-left: -1px;
   background-color:unset;
   border: 2px solid #FFFFFF;
-  /* box-sizing: border-box; */
   border-radius: 4px;
   text-align: right;
   padding-right: 17px;
@@ -631,13 +610,11 @@ max-width: 1200px;
   padding: 0;
   min-height: 95px;
   width: 145px;
-
 }
 
 .filter-type-elements{
   font-size: 18px;
   line-height: 23px;
-
 }
 
 .button-apply,
@@ -678,7 +655,6 @@ max-width: 1200px;
   min-height: 48px;
   margin: 0 72px;
   margin-bottom: 53px;
-
 }
 
 .view {
@@ -694,9 +670,8 @@ max-width: 1200px;
   background-color: #000000;
   width: 48px;
   height: 48px;
-
-
 }
+
 .view-list {
   height: 48px;
   width: 48px;
@@ -731,7 +706,6 @@ max-width: 1200px;
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 34px;
-
 }
 
 .result-container {
@@ -743,7 +717,6 @@ max-width: 1200px;
 
 .result-list {
   list-style-type: none;
-
 }
 
 .hotel-price-item {
@@ -759,7 +732,6 @@ max-width: 1200px;
   background-color: #756257;
   color: #FFFFFF;
   text-decoration: none;
-
 }
 
 .button-favorites-link-off {
@@ -857,7 +829,6 @@ max-width: 1200px;
   font-weight: 700;
   padding-top: 15px;
   text-align: center;
-
 }
 
 .hotel-in-page-title {
@@ -891,7 +862,6 @@ max-width: 1200px;
   align-items: center;
   min-height: 120px;
   margin: 0 72px;
-
 }
 
 .contacts-list {
@@ -901,7 +871,6 @@ max-width: 1200px;
   padding: 0;
   min-width: 107px;
   min-height: 18px;
-
 }
 
 .contacts-item {
@@ -915,7 +884,7 @@ max-width: 1200px;
 .footer.twitter,
 .footer.facebook,
 .footer.youtube {
-  display:inline-block;
+  display: inline-block;
   height: 18px;
   width: 20px;
 }
