@@ -61,7 +61,7 @@
 
       <h2 class="visually-hidden">Фильтр гостиниц</h2>
       <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-      <!-- <div class="filter-type-container"> -->
+
         <fieldset class="filter-fieldset-infrastructure">
           <legend class="filter-type infrastructure">Инфрастуктура</legend>
           <ul class="filter-type-list">
@@ -110,15 +110,17 @@
         </fieldset>
 
         <fieldset class="filter-type-price">
-          <legend class="legend-filter-type-price">Стоимость,₽:</legend>
-          <ul class="filter-type-list-price">
-            <li>
-              <input class="filter-input price-min" type="text" name="price-min" placeholder="от" />
-            </li>
-            <li>
-              <input class="filter-input price-max" type="text" name="price-max" placeholder="до" />
-            </li>
-          </ul>
+          <label>
+            <legend class="legend-filter-type-price">Стоимость,₽:</legend>
+            <ul class="filter-type-list-price">
+              <li>
+                <input class="filter-input price-min" type="text" name="price-min" placeholder="от"  />
+              </li>
+              <li>
+                <input class="filter-input price-max" type="text" name="price-max" placeholder="до" />
+              </li>
+            </ul>
+          </label>
           <input class="filter-input-range" type="range" min="0" max="9000" />
         </fieldset>
         <div class="button-apply-reset-container">
@@ -291,14 +293,16 @@
     </main>
 
     <footer class="page-footer">
-      <section class="follow-catalog">
-        <h2 class="follow-catalog-h2">Подпишитесь на рассылку</h2>
-        <p class="follow-catalog-p"> Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form class="follow-item" method="post" action="https://echo.htmlacademy.ru/">
-          <input class="follow-catalog-input" type="email" name="email" placeholder="Ваш e-mail" />
-          <button class="button-follow" type="submit">Подписаться</button>
-        </form>
-      </section>
+      <label for="e-mail">
+        <section class="follow-catalog">
+          <h2 class="follow-catalog-h2">Подпишитесь на рассылку</h2>
+          <p class="follow-catalog-p"> Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
+          <form class="follow-item" method="post" action="https://echo.htmlacademy.ru/">
+            <input class="follow-catalog-input" type="email" name="email" placeholder="Ваш e-mail" id="e-mail"/>
+            <button class="button-follow" type="submit">Подписаться</button>
+          </form>
+        </section>
+      </label>
 
       <section class="footer-contacts">
         <ul class="contacts-list">
