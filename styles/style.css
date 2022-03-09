@@ -481,7 +481,6 @@ max-width: 1200px;
   border: 0;
   padding-left: 22px;
   box-shadow: none;
-
 }
 
 .follow-catalog-input:hover {
@@ -762,7 +761,6 @@ max-width: 1200px;
   width: 143px;
   height: 48px;
   margin-bottom: 32px;
-  /* margin-left: -1px; */
   background-color:unset;
   border: 2px solid #FFFFFF;
   border-radius: 4px;
@@ -962,8 +960,6 @@ max-width: 1200px;
 .sorting-list {
   background-image: url('../images/catalog-sorting-list.svg');
 }
-
-
 
 .view-list {
   height: 48px;
