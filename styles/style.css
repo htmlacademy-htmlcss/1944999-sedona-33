@@ -266,6 +266,7 @@ body {
   margin: 0;
   padding-top: 97px;
   margin-bottom: 30px;
+
 }
 
  .recommendations-list {
@@ -277,6 +278,7 @@ body {
   padding: 0;
   margin: 0;
   grid-column: 1 / -1;
+
 }
 
 .recommendations-item {
@@ -724,8 +726,22 @@ max-width: 1200px;
   border: 0;
 }
 
-.filter-fieldset-infrastructure input {
+.filter-checkbox {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color:#FFFFFF;
+  border-radius: 4px;
+  margin-right: 19px;
   box-shadow: 0px 4px 4px rgba(0, 0, 4, 0.25);
+
+}
+
+.filter-checkbox-input:checked + .filter-checkbox {
+  background-position: center;
+  background-image: url("../images/catalog-filter-checkbox.svg");
+  background-repeat: no-repeat;
 }
 
 .filter-fieldset-housing {
@@ -737,6 +753,32 @@ max-width: 1200px;
   border: 0;
 }
 
+
+.filter-radio {
+  content: "";
+  display: inline-block;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  background-color:#FFFFFF;
+  border-radius: 50%;
+  margin-right: 19px;
+}
+
+.filter-radio-input:checked + .filter-radio::before {
+  display: inline-block;
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color:#3F5E72;
+  background-position: center;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
 .filter-fieldset-housing .filter-type-list {
   margin-right: 130px;
 }
@@ -746,6 +788,7 @@ max-width: 1200px;
   font-size: 20px;
   line-height: 26px;
 }
+
 
 .filter-type-list-price {
   padding: 0;
@@ -775,8 +818,13 @@ max-width: 1200px;
 }
 
 .price-min {
+  position: relative;
   border-radius: 4px 0 0 4px;
   outline: none;
+}
+
+.filter-input {
+  position: relative;
 }
 
 .filter-input:hover {
@@ -794,6 +842,9 @@ max-width: 1200px;
 }
 
 .legend-filter-type-price {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
   margin-bottom: 34px;
 }
 
@@ -859,6 +910,16 @@ max-width: 1200px;
   list-style-type: none;
   padding: 0;
   min-height: 95px;
+}
+
+.filter-label-hover:hover .filter-checkbox,
+.filter-label-hover:hover .filter-radio{
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.filter-type-elements:active .filter-checkbox,
+.filter-type-elements:active .filter-radio{
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .filter-type-elements label {
