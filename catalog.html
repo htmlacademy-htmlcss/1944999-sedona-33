@@ -76,18 +76,25 @@
           <fieldset class="filter-fieldset-infrastructure">
             <legend class="filter-type infrastructure">Инфраструктура</legend>
             <ul class="filter-type-list">
-              <li class="filter-type-elements">
-                <label >
-                  <input class="swimming-pool" type="checkbox" name="swimming-pool" checked />Бассейн</label>
-              </li>
-              <li class="filter-type-elements">
-                <label>
-                  <input  type="checkbox" name="parking" checked />Парковка
+              <li class="filter-type-elements" >
+                <label class="filter-label-hover" for="swimming-pool-checkbox">
+                  <input class="filter-checkbox-input visually-hidden" type="checkbox" name="swimming-pool" id="swimming-pool-checkbox" checked />
+                  <span class="filter-checkbox"></span>
+                  <span class="filter-label">Бассейн</span>
                 </label>
               </li>
               <li class="filter-type-elements">
-                <label>
-                  <input  type="checkbox" name="wi-fi" />Wi-FI
+                <label class="filter-label-hover" for="filter-checkbox-parking">
+                  <input class="filter-checkbox-input visually-hidden" type="checkbox" name="parking" id="filter-checkbox-parking" checked />
+                  <span class="filter-checkbox"></span>
+                  <span class="filter-label">Парковка</span>
+                </label>
+              </li>
+              <li class="filter-type-elements">
+                <label class="filter-label-hover" for="filter-checkbox-wi-fi">
+                  <input class="filter-checkbox-input visually-hidden"  type="checkbox" name="wi-fi" id="filter-checkbox-wi-fi" />
+                  <span class="filter-checkbox"></span>
+                  <span class="filter-label">Wi-FI</span>
                 </label>
               </li>
             </ul>
@@ -97,21 +104,24 @@
             <legend class="filter-type housing">Тип жилья</legend>
             <ul class="filter-type-list">
               <li class="filter-type-elements">
-                <label>
-                  <input  type="radio" name="type-housing" value="hotel" checked />
-                  Отель
+                <label class="filter-label-hover" for="filter-radio-hotel">
+                  <input class="filter-radio-input visually-hidden" type="radio" name="type-housing" value="hotel" id="filter-radio-hotel" checked />
+                  <span class="filter-radio"></span>
+                  <span class="filter-label">Гостиница</span>
                 </label>
               </li>
               <li class="filter-type-elements">
-                <label>
-                  <input  type="radio" name="type-housing" value="motel" />
-                  Мотель
+                <label class="filter-label-hover" for="filter-radio-motel">
+                  <input class="filter-radio-input visually-hidden" type="radio" name="type-housing" value="motel" id="filter-radio-motel"/>
+                  <span class="filter-radio"></span>
+                  <span class="filter-label"> Мотель</span>
                 </label>
               </li>
               <li class="filter-type-elements">
-                <label>
-                  <input type="radio" name="type-housing" value="apartments" />
-                  Апартаменты
+                <label class="filter-label-hover" for="filter-radio-apartments">
+                  <input class="filter-radio-input visually-hidden" type="radio" name="type-housing" value="apartments" id="filter-radio-apartments"/>
+                  <span class="filter-radio"></span>
+                  <span class="filter-label">Апартаменты</span>
                 </label>
               </li>
             </ul>
@@ -120,14 +130,25 @@
           <fieldset class="filter-type-price">
               <legend class="legend-filter-type-price"><label>Стоимость,₽:</label></legend>
               <ul class="filter-type-list-price">
-                <li>
-                  <input class="filter-input price-min" type="text" name="price-min" placeholder="от"  />
+                <li  class="filter-input-item">
+                  <input class="filter-input price-min" type="number" name="price-min" placeholder="от"  />
                 </li>
-                <li>
-                  <input class="filter-input price-max" type="text" name="price-max" placeholder="до" />
+                <li class="filter-input-item">
+                  <input class="filter-input price-max" type="number" name="price-max" placeholder="до" />
                 </li>
               </ul>
-              <input class="filter-input-range" type="range" min="0" max="9000" />
+              <div class="range">
+                <div class="range-scale">
+                  <div class="range-bar" style="left: 42px; min-width: 20px;">
+                    <button class="range-toggle toggle-min" type="button" >
+                      <span class="visually-hidden">Изменить минимальную цену</span>
+                    </button>
+                    <button class="range-toggle toggle-max" type="button" >
+                      <span class="visually-hidden">Изменить максимальную цену</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
           </fieldset>
           <div class="button-apply-reset-container">
             <button class="button-apply" type="submit">Применить</button>
@@ -182,7 +203,7 @@
             <a href="#" class="button-more-link">Подробнее</a>
           </li>
           <li class="button-favorites-item">
-            <a href="#" class="button-favorites-link">В избранное</a>
+            <a href="#" class="button-favorites-link-off">В избранное</a>
           </li>
           <li class="star">Звезды</li>
           <li class="rating">Рейтинг:8,5</li>
@@ -208,7 +229,7 @@
             <a href="#" class="button-more-link">Подробнее</a>
           </li>
           <li class="button-favorites-item">
-            <a href="#" class="button-favorites-link">В избранное</a>
+            <a href="#" class="button-favorites-link-off">В избранное</a>
           </li>
           <li class="star">Звезды</li>
           <li class="rating">Рейтинг:8,9</li>
@@ -262,7 +283,7 @@
             <a href="#" class="button-more-link">Подробнее</a>
           </li>
           <li class="button-favorites-item">
-            <a href="#" class="button-favorites-link">В избранное</a>
+            <a href="#" class="button-favorites-link-off">В избранное</a>
           </li>
           <li class="star">Звезды</li>
           <li class="rating">Рейтинг:9,2</li>
