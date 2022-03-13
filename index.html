@@ -201,20 +201,20 @@
             <div class="container-data-in">
               <label class="container-data-in-label">
                 <span class="data-label">Дата заезда:</span>
-                <input class="input-data" type="date" name="data-in" >
+                <input class="input-data" type="text" name="data-in" placeholder="Укажите дату">
                 <span class="icon-calendar"></span>
             </label>
             </div>
-            <p>Мы не можем отправить вас в прошлое<output type="text" name="data-error"></output>
+            <p class="model-window-info-data-error">Мы не можем отправить вас в прошлое<output type="text" name="data-error"></output>
             </p>
             <div class="container-data-out">
               <label class="container-data-in-label">
                 <span class="data-label">Дата выезда:</span>
-                <input class="input-data" type="date" name="data-out">
+                <input class="input-data" type="text" name="data-out" placeholder="Укажите дату">
                 <span class="icon-calendar"></span>
             </label>
             </div>
-            <p>На эти даты есть свободные номера. Пока есть.<output type="text" name="data-error" ></output>
+            <p class="model-window-info-data-successful">На эти даты есть свободные номера. Пока есть.<output type="text" name="data-error" ></output>
             </p>
             <div class="search-hotel-container-parameters">
               <div class="container-number-adult">
@@ -225,7 +225,7 @@
                   <button class="toggle-number toggle-number-min">
                     <span class="visually-hidden">Уменьшить количество взрослых</span>
                   </button>
-                    <input class="model-input-number" type="number" name="number-adult-people" placeholder="2" id="number-adult-people">
+                    <input class="model-input-number" type="text" name="number-adult-people" placeholder="2" id="number-adult-people">
                   <button class="toggle-number toggle-number-max">
                     <span class="visually-hidden">Увеличить количество взрослых</span>
                   </button>
@@ -241,7 +241,7 @@
                   <button class="toggle-number toggle-number-min">
                     <span class="visually-hidden">Уменьшить количество взрослых</span>
                   </button>
-                    <input class="model-input-number" type="number" name="number-children-people" placeholder="1" id="number-children-people">
+                    <input class="model-input-number" type="text" name="number-children-people" placeholder="1" id="number-children-people">
                   <button class="toggle-number toggle-number-max">
                     <span class="visually-hidden">Увеличить количество взрослых</span>
                   </button>
