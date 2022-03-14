@@ -28,7 +28,8 @@
   border: 0;
   padding: 0;
   white-space: nowrap;
-  clip-path: inset(100%);
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -38,6 +39,8 @@ html {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   font-family: "PT Sans", "Aria", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -48,6 +51,7 @@ body {
   margin: 0 auto;
   background-color: #fbf7f4;
   color: #000000;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
 
 .navigation {
@@ -89,6 +93,7 @@ body {
   display:inline-block;
   height: 70px;
   margin-right: 16px;
+  align-self: flex-start;
 }
 
 .navigation-icon {
@@ -128,8 +133,8 @@ body {
   list-style-type: none;
   min-height: 66px;
   align-items: center;
-  padding: 0;
   margin: 0 17px 0;
+  max-width: 500px;
 }
 
 .nav-header {
@@ -179,7 +184,7 @@ body {
   line-height: 26px;
   text-align: center;
   text-decoration: none;
-  height: 26px;
+
 }
 
 .navigation-link:hover {
@@ -198,11 +203,11 @@ body {
   color: #FFFFFF;
   text-transform: uppercase;
   display: inline-block;
-  margin-left: 20px;
+  margin: 13px 0px 19px 20px;
   border-radius: 4px;
   padding: 9px 15px 8px 15px;
-  width: 160px;
-  height: 37px;
+  min-width: 160px;
+  min-height: 37px;
   box-sizing: border-box;
 }
 
@@ -225,10 +230,11 @@ body {
 
 .main-container {
   align-self: stretch;
+  flex-grow: 1;
 }
 
 .list-want-here {
-  margin-left: auto;
+
 }
 
 .welcome {
@@ -487,7 +493,7 @@ max-width: 1200px;
   box-sizing: border-box;
   padding-top: 94px;
   background-image: url("../images/index-background-follow.jpg");
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-position: center;
   background-color: #000000;
   color: #FFFFFF;
@@ -553,7 +559,9 @@ max-width: 1200px;
   text-transform: uppercase;
   background-color: #83B3D3;
   border-radius: 0px 10px 10px 0px;
-  width: 200px;
+  min-width: 200px;
+  max-width: 600px;
+  word-wrap: break-word;
   border: 0;
   cursor: pointer;
 }
@@ -655,12 +663,13 @@ max-width: 1200px;
   height: 50px;
   box-sizing: border-box;
   padding-top: 9px;
+  padding-left: 100px;
   text-align: center;
 }
 
 .contacts-phone-catalog {
   position: relative;
-  left: -55px;
+  left: -53px;
 }
 
 .contacts-phone:hover {
@@ -682,6 +691,10 @@ max-width: 1200px;
   padding-top: 10px;
   box-sizing: border-box;
   outline: none;
+ }
+
+ .logo-footer-catalog {
+   padding-left: 43px;
  }
 
 .contacts-item-phone {
@@ -757,7 +770,7 @@ max-width: 1200px;
   display: flex;
   border: 3px solid rgba(255, 25, 25, 0);
   width: 12px;
-  height: 12px;
+  min-height: 12px;
   fill: #ffffff;
   padding: 3px 5px;
   align-items: flex-start;
@@ -767,7 +780,7 @@ max-width: 1200px;
   border: 3px solid rgba(236, 11, 11, 0);
   display: inline-block;
   padding: 0px 8px;
-  height: 18px;
+  min-height: 18px;
   text-decoration: none;
   cursor:text;
   color: #ffffff;
@@ -1213,7 +1226,8 @@ max-width: 1200px;
   border-radius: 4px;
   padding-left: 19px;
   border: 2px solid #E6E6E6;
-  appearance:unset;
+  -webkit-appearance:unset;
+          appearance:unset;
   background-image: url("../images/catalog-selector-pointer.svg");
   background-repeat: no-repeat;
   background-position: 254px;
@@ -1325,7 +1339,7 @@ max-width: 1200px;
   color: #FFFFFF;
   text-decoration: none;
   width: 133px;
-  height: 37px;
+  min-height: 37px;
   text-align: center;
   box-sizing: border-box;
   padding-top: 9px;
@@ -1348,7 +1362,7 @@ max-width: 1200px;
   display: inline-block;
   font-family: inherit;
   width: 140px;
-  height: 37px;
+  min-height: 37px;
   box-sizing: border-box;
   font-weight: 700;
   font-size: 16px;
@@ -1388,7 +1402,7 @@ max-width: 1200px;
   text-transform: uppercase;
   text-decoration: none;
   width: 140px;
-  height: 37px;
+  min-height: 37px;
   text-align: center;
   box-sizing: border-box;
   padding-top: 9px;
@@ -1413,7 +1427,7 @@ max-width: 1200px;
   position: relative;
   left: -22px;
   width: 160px;
-  height: 37px;
+  min-height: 37px;
   font-size: 16px;
   line-height: 21px;
   text-transform: uppercase;
@@ -1461,7 +1475,7 @@ max-width: 1200px;
 .button-loading-more {
   display:block;
   width: 620px;
-  height: 60px;
+  min-height: 60px;
   border-radius: 4px;
   text-align: center;
   margin: 30px auto;
@@ -1476,7 +1490,7 @@ max-width: 1200px;
 .button-loading-more-text-container {
   display: block;
   padding-top: 17px;
-  height: 26px;
+  min-height: 26px;
 }
 
 .button-loading-more:hover {
@@ -1511,8 +1525,8 @@ max-width: 1200px;
 .pagination-list {
   display: flex;
   flex-wrap: wrap;
-  height: 55px;
-  /* max-width: 600px; */
+  min-height: 55px;
+  max-width: 600px;
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -1531,7 +1545,7 @@ max-width: 1200px;
   display: block;
   box-sizing: border-box;
   width: 55px;
-  height: 55px;
+  min-height: 55px;
   margin: 0;
   font-size: 20px;
   line-height: 26px;
@@ -1562,12 +1576,13 @@ max-width: 1200px;
 .select-number{
   display: inline-block;
   width: 160px;
-  height: 48px;
+  min-height: 48px;
   padding-left: 17px;
   border: 2px solid #E6E6E6;
   box-sizing: border-box;
   border-radius: 4px;
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   background-image: url("../images/catalog-selector-pointer.svg");
   background-repeat: no-repeat;
   background-position: 127px;
@@ -1597,16 +1612,22 @@ max-width: 1200px;
   justify-content: center;
   min-height: 112px;
   margin: 0 60px;
+  margin-top: auto;
 }
 
 .contacts-list {
+  min-width: 107px;
   display: flex;
   list-style-type: none;
   margin: 0;
-  margin-right: auto;
   padding: 0;
-  min-width: 107px;
-  align-items: flex-end;
+  justify-self: center;
+}
+
+.contacts-list-catalog{
+  position: relative;
+  left: -52px;
+  top: 2px;
 }
 
 .contacts-item:last-child {
@@ -1618,7 +1639,7 @@ max-width: 1200px;
 .footer-facebook,
 .footer-youtube {
   display: inline-block;
-  height: 40px;
+  min-height: 40px;
   width: 40px;
   padding: 10px;
   box-sizing: border-box;
@@ -1669,7 +1690,7 @@ max-width: 1200px;
   margin-bottom: 11px;
   left: 155px;
   width: 400px;
-  height: 29px;
+  min-height: 29px;
   font-weight: 400;
   font-size: 16px;
   line-height: 40px;
@@ -1682,7 +1703,7 @@ max-width: 1200px;
   margin: 0;
   left: 155px;
   width: 420px;
-  height: 29px;
+  min-height: 29px;
   font-weight: 400;
   font-size: 16px;
   line-height: 40px;
@@ -1696,7 +1717,7 @@ max-width: 1200px;
   flex-direction: column;
   align-items: center;
   width: 715px;
-  height: 561px;
+  min-height: 561px;
   box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
   border-radius: 30px;
   box-sizing: border-box;
@@ -1714,7 +1735,7 @@ max-width: 1200px;
   left: 50%;
   display: inline-block;
   width: 13px;
-  height: 13px;
+  min-height: 13px;
   padding: 0;
   border: 0;
   transform: translate(-50%,-50%);
@@ -1730,7 +1751,7 @@ max-width: 1200px;
   top: 54px;
   right: 70px;
   width: 53px;
-  height: 53px;
+  min-height: 53px;
   border-radius: 50%;
   cursor: pointer;
 
