@@ -2084,6 +2084,6 @@ img {
   background-image: url("../images/model-tooltip-pointer.svg");
 }
 
-/* .model-window-off {
+.model-window-off {
   display: none;
-} */
+}
