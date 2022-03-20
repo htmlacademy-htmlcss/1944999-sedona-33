@@ -127,13 +127,19 @@
           </fieldset>
 
           <fieldset class="filter-type-price">
-              <legend class="legend-filter-type-price"><label>Стоимость, &#8381;</label></legend>
+              <legend class="legend-filter-type-price"><label for="filter-input">Стоимость, &#8381;</label></legend>
               <ul class="filter-type-list-price">
                 <li  class="filter-input-item">
-                  <input class="filter-input price-min" type="text" name="price-min" placeholder="от"  />
+                  <label>
+                    <input class="filter-input price-min" type="text" name="price-min" placeholder="от" id="filter-input"/>
+                    <span class="placeholder-price">0</span>
+                </label>
                 </li>
                 <li class="filter-input-item">
-                  <input class="filter-input price-max" type="text" name="price-max" placeholder="до" />
+                  <label>
+                    <input class="filter-input price-max" type="text" name="price-max" placeholder="до" id="filter-input"/>
+                    <span class="placeholder-price">9000</span>
+                  </label>
                 </li>
               </ul>
               <div class="range">
